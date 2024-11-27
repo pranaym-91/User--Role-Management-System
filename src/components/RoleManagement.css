@@ -1,0 +1,118 @@
+/* Role Management Container */
+.role-management-container {
+    padding: 20px;
+    background-color: #f4f7fc; /* Light blue background for the container */
+    border-radius: 8px;
+}
+
+/* Table Styling */
+.role-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.role-table th, .role-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+    font-size: 1rem;
+}
+
+/* Header Styling */
+.role-table th {
+    background-color: #1e3a8a; /* Blue for headers */
+    color: white;
+    font-weight: bold;
+}
+
+/* Button Styling */
+button {
+    padding: 6px 12px;
+    margin: 0 5px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover Effect for Buttons */
+button:hover {
+    transform: translateY(-3px); /* Slight lift */
+}
+
+/* Permissions Section */
+.permissions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.permissions label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Popup Overlay */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Popup Content */
+.popup {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    width: 350px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Popup Inputs */
+.popup input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.popup input:focus {
+    border-color: #1e88e5; /* Blue border on focus */
+}
+
+/* Action Buttons in Popup */
+.popup-actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Cancel Button */
+.btn-cancel {
+    background-color: #f44336; /* Red for Cancel */
+    color: white;
+    font-weight: bold;
+}
+
+.btn-cancel:hover {
+    background-color: #d32f2f; /* Darker red */
+}
+
+/* Save Button */
+.btn-save {
+    background-color: #1e88e5; /* Blue for Save */
+    color: white;
+    font-weight: bold;
+}
+
+.btn-save:hover {
+    background-color: #1976d2; /* Darker blue */
+}

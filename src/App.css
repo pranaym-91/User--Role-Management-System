@@ -1,0 +1,208 @@
+/* General Styling for App */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f4f8; /* Soft light blue background */
+  color: #333;
+}
+
+/* App Container */
+.App {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+/* Header Styling */
+h1 {
+  text-align: center;
+  color: #1e3a8a; /* Dark blue for header */
+  font-size: 3rem;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+}
+
+/* User and Role Management Sections */
+.management-sections {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+/* Individual Section Styling */
+section {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  flex: 1;
+  min-width: 45%;
+  margin-bottom: 30px;
+  transition: all 0.3s ease;
+}
+
+section:hover {
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Typography for Titles */
+h2 {
+  color: #ff5722; /* Orange color for titles */
+  font-size: 1.75rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+/* Button Styling */
+
+button {
+  background-color: #ff5722; /* Orange for buttons */
+  color: #fff;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background-color: #7919e6; /* Darker orange for hover */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Form and Text Field Styling */
+input, select, textarea {
+  border: 2px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #ff5722; /* Orange border on focus */
+  outline: none;
+}
+
+/* Modal/Dialog Styling */
+.dialog-title {
+  background-color: #1e3a8a; /* Dark blue for modal title */
+  color: #fff;
+  padding: 18px;
+  font-size: 1.25rem;
+  border-radius: 12px 12px 0 0;
+}
+
+.dialog-content {
+  padding: 25px;
+}
+
+.dialog-actions {
+  padding: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.dialog-buttons {
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.dialog-buttons:hover {
+  background-color: #1e3a8a;
+  cursor: pointer;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 40px;
+}
+
+/* Table Header Styling */
+th, td {
+  padding: 15px;
+  text-align: left;
+}
+
+th {
+  background-color: #1e3a8a; /* Dark blue for table header */
+  color: white;
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #f4f6f9; /* Very light gray for even rows */
+}
+
+tr:hover {
+  background-color: #ffebee; /* Light red-pink when hovering */
+}
+
+/* Table Button Styling */
+table button {
+  padding: 8px 15px;
+  font-size: 0.875rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 3px;
+}
+
+/* Edit Button Styling */
+table button.edit-btn {
+  background-color: #4caf50; /* Green for edit button */
+  color: white;
+}
+
+table button.edit-btn:hover {
+  background-color: #388e3c; /* Darker green for edit button hover */
+}
+
+/* Delete Button Styling */
+table button.delete-btn {
+  background-color: #e53935; /* Red for delete button */
+  color: white;
+}
+
+table button.delete-btn:hover {
+  background-color: #c62828; /* Darker red for delete button hover */
+}
+
+/* Button Hover Effect */
+table button:hover {
+  opacity: 0.85;
+  transform: translateY(-2px); /* Slight lift on hover */
+}
+
+/* Responsive Design for Small Screens */
+@media (max-width: 768px) {
+  .management-sections {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  section {
+    min-width: 100%;
+  }
+
+  table {
+    font-size: 0.9rem;
+  }
+
+  th, td {
+    padding: 10px;
+  }
+}
